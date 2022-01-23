@@ -4,7 +4,7 @@
 
 html {
     background-color: #00539F;
-    background-image: linear-gradient(0deg, #FF9500 0%, #007700 50%, #00539F 100%);
+    background-image: linear-gradient(0deg, #007700 0%, #00539F 100%);
 
     font-size: 20px;
     font-family: 'Noto Serif TC', serif;
@@ -18,10 +18,104 @@ body {
     padding: 0;
     border: 5px solid black;
 
-    background-color: #FF9500;
+    background-color: #5ef3f8;
     background-image: url(../images/546902.jpg);
     background-size: 1200px;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+header {
+    width: 100%;
+    background-color: crimson;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid black;
+}
+
+.header-picture {
+    width: 100%
+}
+
+nav {
+    width: 100%;
+    background-color: yellow;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid black;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 1px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5em;
+    background-color: chartreuse;
+}
+
+main {
+    width: 50%;
+    height: auto;
+    background-color: lightpink;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid black;
+}
+
+aside {
+    width: 20%;
+    background-color: yellowgreen;
+    padding: 0;
+    margin: 0;
+    border: 0.5px solid black;
+}
+
+#left-aside {
+    float: left;
+}
+
+#right-aside {
+    float: right;
+}
+
+footer {
+    color: white;
+    width: 100%;
+    background-color: black;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid black;
+}
+
+#likecoin-button{
+    background-color: white;
+}
+
+h1 {
+    font-size: var(--h1_font_size);
+    /*字體大小*/
+    text-align: center;
+    /*位置(置中)*/
+    margin: 0;
+    padding: 20px 0;
+    color: #00539F;
+    text-shadow: 3px 3px 1px black;
+}
+
+h2 {
+    font-size: calc(var(--h1_font_size) - 10px);
+    /*字體大小*/
+    text-align: center;
+    /*位置(置中)*/
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
 }
