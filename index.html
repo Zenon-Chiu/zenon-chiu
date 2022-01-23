@@ -11,7 +11,7 @@
     <meta name="description" content="This website is a part of my art class homework.">
 
     <title>Curriculum Vitae｜Zenon Chiu</title>
-    <link rel="shortcut icon" href="shortcut.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/shortcut.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width">
 
     <link href="styles/style.css" rel="stylesheet" type="text/css">
@@ -27,8 +27,8 @@
     <header>
 
         <!--橫幅圖片-->
-        <img src=".png" alt="head">
-        <h1>ws001zc / test_site_2</h1>
+        <img src="images/head (1200-300px).png" alt="head" class="header-picture" title="welcome (1200*300px)">
+        <h1>My Curriculum Vitae</h1>
 
         <!--頂部導航欄-->
         <nav>
@@ -51,437 +51,18 @@
 
     <!--左側欄-->
     <aside id="left-aside">
-        <h2 class="aside-p">左超連結欄位</h2>
+        <h2 class="aside-p">大綱索引</h2>
         <ul>
-            <li><a href="#">超連結1</a></li>
-            <li><a href="#">超連結2</a></li>
-            <li><a href="#">超連結3</a></li>
-        </ul>
-    </aside>
-
-    <!--右側欄-->
-    <aside id="right-aside">
-        <h2 class="aside-p">右超連結欄位</h2>
-        <ul>
-            <li><a href="#">超連結1</a></li>
-            <li><a href="#">超連結2</a></li>
-            <li><a href="#">超連結3</a></li>
+            <li><a href="#H1">超連結1</a></li>
+            <li><a href="#H2">超連結2</a></li>
+            <li><a href="#H3">超連結3</a></li>
         </ul>
     </aside>
 
     <!--主體-->
     <main>
 
-        <p>
-            I have something to show you, but it's hidden.<br>
-            please select article under this paragraph.<br>
-            From there,&gt;
-        <article class="hide">
-            <s>Gura is my wife.</s>(wake up!)<br>
-            she is so cute~~~~~
-            <!-- 此处包含一个 article（一篇文章），内容略…… -->
-        </article><br>
-        &lt;To there.
-        </p>
-
-        <!--creating a navigation menu創建導航菜單-->
-        <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#active_learning_creating_a_navigation_menu"
-            target="_blank" title="creating a navigation menu">
-            創建導航菜單
-        </a>
-
-        <!--文件標題(heading)，至多六層。-->
-        <h1>第一層標題</h1>
-        <h2 id="H2">第二層標題</h2>
-        <h3>第三層標題</h3>
-        <h4>第四層標題</h4>
-        <h5>第五層標題</h5>
-        <h6>第六層標題</h6>
-
-        <img src="images/white.png" title="color white" alt="My test image: color change" class="js-picture">
-        <!--元素：img，屬性：src(圖片來源位置)、alt(圖片說明)。-->
-        <figure>
-            <img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg"
-                class="dinosaur" title="dinosaur" alt="test">
-            <figcaption>曼彻斯特大學博物館展出的暴龍的化石</figcaption>
-        </figure>
-
-        <!--內文格式-->
-        <div>
-
-            <!--段落-->
-            <div>
-
-                <p>段落內文：</p>
-                <p><span lang="en-US">paragraph</span></p>
-                <p><span lang="ja">ご飯が熱い。</span></p>
-                <p><em>斜體</em></p>
-                <p><strong>粗體</strong></p>
-
-            </div>
-
-            <!--縮寫-->
-            <div>
-
-                <p>縮寫展示：</p>
-                <p><abbr title="Hypertext Markup Language">HTML</abbr></p>
-                <p><abbr title="JavaScript">JS</abbr></p>
-
-            </div>
-
-            <!--上標sup、下標sub (次方/基數...)-->
-            <div>
-
-                <p>上下標：</p>
-                <p>(2021) Monday, August 16<sup>th</sup></p>
-                <p>Caffeine's chemical formula is C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub></p>
-
-            </div>
-
-            <br>
-        </div>
-
-        <!--清單-->
-        <div>
-
-            <!--無順序性清單（Unordered lists）。-->
-            <ul>
-                <li>無序清單1</li>
-                <li>無序清單2</li>
-                <ol>
-                    <li>無序中有序1</li>
-                    <li>無序中有序2</li>
-                </ol>
-                <li>無序清單3</li>
-
-                <li>無序極限1</li>
-                <ul>
-                    <li>無序極限2</li>
-                    <ul>
-                        <li>無序極限3</li>
-                    </ul>
-                </ul>
-            </ul>
-
-            <!--有順序性清單（Ordered lists）。-->
-            <ol>
-                <li>有序清單1</li>
-                <li>有序清單2</li>
-                <ul>
-                    <li>有序中無序1</li>
-                    <li>有序中無序2</li>
-                </ul>
-                <li>有序清單3</li>
-            </ol>
-
-            <!--描述清單(description lists)-->
-            <dl>
-                <dt>描述清單1</dt>
-                <dd>解釋1</dd>
-
-                <dt>描述清單2</dt>
-                <dd>解釋1</dd>
-                <dd>解釋2</dd>
-            </dl>
-        </div>
-
-        <!--超連結-->
-        <div>
-            <!--同一網站盡量用"相對url"(降低瀏覽器及網路負載)，其他網站則用"絕對url""-->
-
-            <a href="https://developer.mozilla.org/zh-TW/docs/Learn/Getting_started_with_the_web" target="_blank"
-                title="developer.mozilla.org">
-                超連結
-            </a>
-            <!--元素：a(anchor)，屬性：href(hypertext reference)；連結至其他位置。-->
-            <!--target="_blank"可以在新視窗中開啟超連結，若不要則可忽略-->
-            <br>
-
-            <a href="#H2">
-                <!--跳轉至本頁面的H2-->
-                to h2
-            </a>
-            <br>
-
-            <a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
-                download="firefox-latest-64bit-installer.exe">
-                <!--屬性download可預設存檔檔名-->
-                Download Latest Firefox for Windows (64-bit) (English, US)
-            </a>
-            <br>
-
-            <a href="mailto:example@gmil.com">
-                mail not found (it's fake)
-            </a>
-
-        </div>
-
-        <!--引用：blockquote、q-->
-        <div>
-
-            <!--模塊引用-->
-            <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
-                <p>
-                    The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block Quotation
-                        Element</em>) indicates that the enclosed text is an extended quotation.
-                </p>
-            </blockquote>
-
-            <!--行內引用-->
-            <p>
-                The quote element — <code>&lt;q&gt;</code> — is
-                <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
-                    intended for short quotations that don't require paragraph breaks.
-                </q>
-            </p>
-
-            <p>According to the
-                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" target="_blank">
-                    <cite>MDN blockquote page</cite>
-                </a>:
-            </p>
-        </div>
-
-        <!--聯絡地址-->
-        <address>
-
-            <p>
-                Zenon<br>
-                1111111<br>
-                222222222<br>
-                TW
-            </p>
-
-            <ul>
-                <li>Tel: 01234 567 890</li>
-                <li>
-                    Email:
-                    <a href="mailto:me@grim-north.co.uk">
-                        me@grim-north.co.uk
-                    </a>
-                </li>
-            </ul>
-        </address>
-
-        <!--顯示計算機代碼-->
-        <iframe src="pres.html" frameborder="0" height="400px" allowfullscreen sandbox></iframe>
-        <br>
-
-        <!--時間-->
-        <time datetime="2016-01-20">2016年1月20日</time>
-        <!--其他格式
-
-                年+月+日       (YYYY-MM-DD)
-                <time datetime="2016-01-20">20 January 2016</time>
-
-                年+月          (YYYY-MM)
-                <time datetime="2016-01">January 2016</time>
-                
-                月+日          (MM-DD)
-                <time datetime="01-20">20 January</time>
-                    
-                時+分          (hh:mm)
-                <time datetime="19:30">19:30</time>
-                
-                時+分+秒+毫秒   (hh:mm:ss.ms)
-                <time datetime="19:30:01.856">19:30:01.856</time>
-                    
-                日期+時間       (YYYY-MM-DDThh:mm)
-                <time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time>
-                    
-                含時區偏移值    (YYYY-MM-DDThh:mm+hh:mm)
-                <time datetime="2016-01-20T19:30+01:00">7.30pm, 20 January 2016 is 8.30pm in France</time>
-                    
-                年+周          (YYYY-Www)
-                <time datetime="2016-W04">The fourth week of 2016</time>
-            -->
-
-        <p><br>以下影音<br></p>
-
-        <!--影片檔-->
-        <video controls poster="images/video.png">
-            <!--可選取多個資源，type可協助瀏覽器直接開啟支援的資源，否則瀏覽器將一個一個載入測試，耗時-->
-            <source src="videos/rabbit.mp4" type="video/mp4">
-            <source src="videos/rabbit.webm" type="video/webm">
-
-            <p>你的瀏覽器不支援 HTML5 影片。可進入<a href="rabbit320.mp4">此連結</a>欣賞</p>
-        </video>
-
-        <!--音訊檔-->
-        <figure>
-            <figcaption>以下音樂來自medly應用程式的範例<br><br></figcaption>
-
-            <figcaption class="figcaption-left">賓士</figcaption>
-            <audio controls>
-                <source src="audios/賓士.wav" type="audio/wav">
-                <source src="audios/賓士.mp3" type="audio/mp3">
-
-                <p>你的瀏覽器不支援 HTML5 音訊。可進入<a href="https://drgks-369.github.io/audios/%E8%B3%93%E5%A3%AB.wav">此連結</a>聆聽
-                </p>
-            </audio>
-
-            <figcaption class="figcaption-left">落日</figcaption>
-            <audio controls>
-                <source src="audios/落日.wav" type="audio/wav">
-                <source src="audios/落日.mp3" type="audio/mp3">
-
-                <p>你的瀏覽器不支援 HTML5 音訊。可進入<a href="https://drgks-369.github.io/audios/%E8%90%BD%E6%97%A5.wav">此連結</a>聆聽
-                </p>
-            </audio>
-
-            <figcaption class="figcaption-left">決心</figcaption>
-            <audio controls>
-                <source src="audios/決心.wav" type="audio/wav">
-                <source src="audios/決心.mp3" type="audio/mp3">
-
-                <p>你的瀏覽器不支援 HTML5 音訊。可進入<a href="https://drgks-369.github.io/audios/%E6%B1%BA%E5%BF%83.wav">此連結</a>聆聽
-                </p>
-            </audio>
-        </figure>
-
-        <!--插入其他技術iframe-->
-
-        <!--YT-->
-        <p>iframe插入：YouTube</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/WGgEFoI9MhE"
-            title="YouTube video player：Gawr Gura - Reflect" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-        </iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/WkGc1gH5lU8"
-            title="YouTube video player：Gawr Gura - Reflect (MV)" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-        </iframe>
-        <br>
-        <!--google map-->
-        <p>iframe插入：Google Map</p>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54177776.63997153!2d46.56308863478383!3d34.024651644188495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601889682a7243eb%3A0x9e8ab24bd894e12b!2zQ292ZXIg6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1629899658490!5m2!1szh-TW!2stw"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-
-        <!--SVG向量圖-->
-        <p>插入SVG向量圖</p>
-        <svg version="1.1" baseProfile="full" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-            <rect width="100%" height="100%" fill="black" />
-            <circle cx="150" cy="100" r="90" fill="blue" />
-        </svg>
-
-        <!--表格-->
-        <!-- td代表table data；tr代表table row；th代表table head-->
-        <!--colspan代表合併同列儲存格；rowspan代表合併同排儲存格-->
-        <p>表格</p>
-        <table>
-            <caption>xy二維陣列</caption>
-            <colgroup>
-                <col>
-                <col>
-                <col>
-                <col>
-                <col>
-                <col style="border: 5px solid;">
-            </colgroup>
-
-            <thead>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <th scope="colgroup" colspan="4">x</th>
-                </tr>
-                <tr>
-                    <th scope="col">&nbsp;</th>
-                    <th scope="col">&nbsp;</th>
-                    <th scope="col">1</th>
-                    <th scope="col">2</th>
-                    <th scope="col">3</th>
-                    <th scope="col">4</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="rowgroup" rowspan="4">y</th>
-                    <th scope="row">1</th>
-                    <td>1,1</td>
-                    <td>2,1</td>
-                    <td>3,1</td>
-                    <td>4,1</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>1,2</td>
-                    <td>2,2</td>
-                    <td>&nbsp;</td>
-                    <td>4,2</td>
-                </tr>
-                <tr>
-                    <th scope="row" rowspan="2">3~4</th>
-                    <td>1,3</td>
-                    <td colspan="2">2~3,3</td>
-                    <td>4,3</td>
-                </tr>
-                <tr>
-                    <td colspan="3">1~3,4</td>
-                    <td>4,4</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <td>&nbsp;</td>
-                <td colspan="4">great</th>
-                <td>yabai</td>
-            </tfoot>
-
-        </table>
-
-        <p>block / inline / flex / inline-flex / inline-block 之間的差別 (可以放大縮小看變化)</p>
-        <p class="border-vs">
-            /-<span class="border-vs block">
-                block-1
-                /-<span class="border-vs block">block-1-1</span>-/
-                /-<span class="border-vs block">block-1-2</span>-/
-            </span>-/
-            /-<span class="border-vs block">block-2</span>-/
-            /-<span class="border-vs inline">
-                inline-1
-                /-<span class="border-vs inline">inline-1-1</span>-/
-                /-<span class="border-vs inline">inline-1-2</span>-/
-            </span>-/
-            /-<span class="border-vs inline">inline-2</span>-/
-            /-<span class="border-vs flex">
-                flex-1
-                /-<span class="border-vs flex">flex-1-1</span>-/
-                /-<span class="border-vs flex">flex-1-1</span>-/
-            </span>-/
-            /-<span class="border-vs flex">flex-2</span>-/
-            /-<span class="border-vs inline-flex">
-                inline-flex-1
-                /-<span class="border-vs inline-flex">inline-flex-1-1</span>-/
-                /-<span class="border-vs inline-flex">inline-flex-1-2</span>-/
-            </span>-/
-            /-<span class="border-vs inline-flex">inline-flex-2</span>-/
-            /-<span class="border-vs inline-block">
-                inline-block-1
-                /-<span class="border-vs inline-block">inline-block-1-1</span>-/
-                /-<span class="border-vs inline-block">inline-block-1-2</span>-/
-            </span>-/
-            /-<span class="border-vs inline-block">inline-block-2</span>-/
-        </p>
-
-        <p class="p_main_js">以下button為JavaScript內容；img也是js的一部分</p>
-
-        <!--特殊字元
-
-                    在HTML中，字元 <, >,",' 和 & 是特殊字元. 它們是HTML語法本身的一部分；若需要純文字，使用字元引用以忽略。
-                    
-                    <：&lt;
-                    >：&gt;
-                    "：&quot;
-                    '：&apos;
-                    &：&amp;
-                -->
-
-        <button>Change user</button>
-
+        
     </main>
 
     <!--底部-->
@@ -495,18 +76,14 @@
             支持我也可免費。<br>
             <a href="https://liker.land/zenon-chiu/civic">liker.land/zenon-chiu</a>
         </p>
-        <div class="likecoin-embed likecoin-button" data-liker-id="zenon-chiu"
+        <div id="likecoin-button" class="likecoin-embed likecoin-button" data-liker-id="zenon-chiu"
             data-href="https://docs.like.co/developer/likecoin-button/"></div>
         <script src="https://static.like.co/sdk/v1/button.js"></script>
 
         <!--著作權宣明-->
-        <p>© 2021 Zenon Chiu 測試網頁</p>
-        <p>部分內容截取自
-            <a href="https://developer.mozilla.org"> developer.mozilla.org</a>、
-            <a href="https://medlylabs.com/">Medly</a>、
-            <a href="https://www.youtube.com/">YouTube</a>和
-            <a href="https://www.google.com/maps">google map</a>，
-            為自我學習與練習之相關用途，如未取得相關人士許可，勿擅自取用。
+        <p>© 2021 Zenon Chiu Curriculum Vitae</p>
+        <p>
+            本網頁為自我學習與練習之相關用途，如未取得本人許可，勿擅自取用。
         </p>
     </footer>
 
